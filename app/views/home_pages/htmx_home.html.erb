@@ -1,0 +1,20 @@
+<section class="section">
+  <div class="container">
+    <div class="select is-large">
+      <select name="task" hx-trigger="change, load" hx-get="/frameworks" hx-target="#frameworks">
+        <option value="Python">Python</option>
+        <option value="Ruby">Ruby</option>
+        <option value="JavaScript">JavaScript</option>
+      </select>
+    </div>
+  </div>
+  <div class="select is-large">
+    <select id="frameworks">
+      
+    </select>
+  </div>
+</section>
+
+<button hx-post="/clicked" hx-swap="innerHTML">
+  Click Me
+</button>
