@@ -8,13 +8,14 @@
     <button type="button"
             class="block px-5 py-3 font-medium text-white bg-blue-600 rounded-lg"
             hx-get="/tasks/new"
+            hx-swap="beforebegin"
             hx-target="#new-task">New Task
     </button>
   </div>
 
+  <div id="new-task"></div>
+
   <div id="tasks" class="min-w-full">
     <%= render @tasks %>
   </div>
-
-  <div id="new-task"></div>
 </div>
